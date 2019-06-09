@@ -5,38 +5,176 @@
 ::placeholder
 	color: #666
 
-::selection
-	background-color: $accent
-	color: #fff
+.page, section, .row, div
+	border: 1px solid red
 
 body
 	font-size: 16px
 	min-width: 320px
-	position: relative
-	line-height: 1.65
-	font-family: $default-font
-	overflow-x: hidden
-	color: $text
-	input, textarea
-		border: #666 1px solid
-		outline: none
-		&:focus:required:invalid
-			border-color: red
-		&:required:valid
-			border-color: green
+	margin: 0px
+	padding: 0px
+	// width: 21cm
+	// height: 29.7cm
+	// width: 29.7cm
+	// height: 20.3cm
+	//margin: 30mm 45mm 30mm 45mm
+	display: flex
+	flex-direction: column
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-	&.img-width
+.row
+	display: flex
+	flex-direction: row
+	width: 100%
+	box-sizing: border-box
+
+.col
+	display: flex
+	flex-direction: column
+	width: 100%
+	box-sizing: border-box
+
+.page
+	display: flex
+	flex-direction: row
+	box-sizing: border-box
+	width: 100vw
+	height: 100vh
+	section
+		display: flex
+		flex-direction: column
 		width: 100%
+		padding: 1em
+		margin-left: 4em
+		.title
+			display: flex
+			justify-content: center
+			font-size: 2em
+			font-weight: bold
+			//margin-bottom: 1em
+	section
+		.aboutCharacterContainer
+			display: flex
+			justify-content: start
+			align-items: center
+			margin-top: 1em
+			.aboutCharacterImage
+				width: 70%
+				img
+					width: 100%
+			.aboutCharacterInfo
+				padding: 1em
+				width: 100%
+				table
+					width: 100%
+					td
+						border-bottom: 1px solid black
+	section
+		.combatContainer
+			margin-right: 1em
+			text-align: center
+			justify-content: space-between
+			.row
+				align-items: center
+				border: 1px solid black
+			img
+				width: 40px
+				height: 40px
+				border-right: 1px solid black
+			.title
+				font-size: 10px
+				width: 120px
+			.amount
+				border-left: 1px solid black
+				width: 100%
+				font-size: 16px
+				font-weight: bold
+				//padding: 1em 0
+		.hitPointsContainer
+			justify-content: space-between
+			.row
+				justify-content: space-between
+				span
+					border: 1px solid black
+					width: 100%
+					text-align: center
+				.title
+					font-size: 10px
+				.amount
+					font-size: 20px
+					font-weight: bold
+		.liveSafeThrow
+			justify-content: center
+			span
+				width: 100%
+				font-size: 16px
+				border: 1px solid black
+				text-align: center
+			
+	section.attributes
+		justify-content: space-between
+		.attributeContainer
+			display: flex
+			justify-content: start
+			height: 90px
+			img
+				width: 90px
+				height: 90px
+			.attributeInfo
+				width: 70px
+				display: flex
+				flex-direction: column
+				justify-content: center
+				text-align: center
+				padding: 0em 1em
+				.title
+					border: 1px solid black
+					font-size: 10px
+				.amount
+					border-left: 1px solid black
+					border-right: 1px solid black
+					padding: 0.3em
+					font-size: 18px
+					font-weight: bold
+				.modifier
+					border: 1px solid black
+					border-radius: 0 0 100% 100%
+			.skills
+				display: flex
+				flex-direction: column
+				justify-content: center
+				width: 110px
+				font-size: 12px
+				margin: 5px
+				padding-left: 1em
+				list-style-type: circle					
+				li.proficiency
+					list-style-type: disc
+	section
+		.skillsContainer
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			margin-top: 1em
+			.skillsInfo
+				margin: 1em
+				width: 100%
+				display: flex
+				flex-direction: column
+				justify-content: start
+				align-items: center
+				img
+					width: 100px
+					height: 100px
+				span
+					border-bottom: 1px solid black
+					width: 100%
+					text-align: center
+				.title
+					//margin: 1em 0 0 0
+					//border: 1px solid black
+					font-weight: bold
+					font-size: 1.5em
 
-.text-center
-	text-align: center
-
-b, strong
-	font-weight: bold
 
 
 

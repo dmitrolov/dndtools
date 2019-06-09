@@ -1,7 +1,7 @@
 var syntax        = 'sass', // Syntax: sass or scss;
 		gulpversion   = '4'; // Gulp version: 3 or 4
 
-var gulp          = require('gulp'),
+var 	gulp          = require('gulp'),
 		gutil         = require('gulp-util' ),
 		sass          = require('gulp-sass'),
 		browserSync   = require('browser-sync'),
@@ -37,7 +37,7 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'app/node_modules/jquery/dist/jquery.min.js',
+		'node_modules/jquery/dist/jquery.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
