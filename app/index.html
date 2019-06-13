@@ -8,209 +8,23 @@
 </head>
 <body>
 	<div class="page">
-		<section>
-			<table border="1" width="100%">
-				<thead>
-					<tr>
-						<td colspan="2">Создать устройство</td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td colspan="2">1й уровень скального гнома (умение)</td>
-					</tr>
-					<tr>
-						<td>Кол-во использований</td>
-						<td>Неограниченно</td>
-					</tr>
-					<tr>
-						<td>Время накладывания:</td>
-						<td>1 час</td>
-					</tr>
-					<tr>
-						<td>Кол-во использований</td>
-						<td>Неограниченно</td>
-					</tr>
-					<tr>
-						<td>Дистанция</td>
-						<td>Касание</td>
-					</tr>
-					<tr>
-						<td>Компонненты</td>
-						<td>С, М (железо на 10 зм)</td>
-					</tr>
-					<tr>
-						<td>Длительность</td>
-						<td>24 часа</td>
-					</tr>
-					<tr>
-						<td colspan="2">
-							Вы создаете Крошечное механическое устройство(КД 5, ХП 1)
-<br>
-Вы можете потратить 1 час на перезарядку устройства (Длительность работы обновится)
-Вы можете действием разобрать его и получить обратно использованные материалы
-Одновременно вы можете иметь не более трёх таких устройств.
-При создании устройства выберите один из следующих вариантов:
-<br>
-Заводная игрушка.
-Эта заводная игрушка изображает животное, чудовище или существо (прим. лягушка, мышь, птица, дракон, солдатик) Поставленная на землю, она проходит 5 футов в случайном направлении за каждый ваш ход, издавая звуки, соответствующие изображаемому существу.
-<br>
-Зажигалка
-Это устройство производит миниатюрный огонёк, с помощью которого можно зажечь свечу, факел или костёр. Использование этого устройства требует действия.
-<br>
-Музыкальная шкатулка
-При открытии эта шкатулка проигрывает мелодию средней громкости. Шкатулка перестаёт играть если мелодия закончилась или если шкатулку закрыли.
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</section>
-		<section></section>
-		<section></section>
+		<div id="app">
+			{{ message }}
+		</div>
+		<br>
+		<div id="app-2">
+			<span v-bind:title="message">
+				Наведи на меня курсор на пару секунд,
+				чтобы увидеть динамически связанное значение title!
+			</span>
+		</div>
+		<br>
+		<div id="app-3">
+			<span v-if="seen">Сейчас меня видно</span>
+		</div>
 	</div>
 	<div class="page">
-		<section>
-			<div class="title">Экипировка</div>
-			<div class="row">
-				<table border="1" width="50%">
-					<tr>
-						<td colspan="2">Оружие ближнего боя</td>
-					</tr>
-					<tr>
-						<td>Название</td>
-						<td>Боевой посох</td>
-					</tr>
-					<tr>
-						<td>Тип оружия</td>
-						<td>Простое, рукопашное</td>
-					</tr>
-					<tr>
-						<td>Тип урона</td>
-						<td>Дробящий</td>
-					</tr>
-					<tr>
-						<td>Урон</td>
-						<td>1к6</td>
-					</tr>
-					<tr>
-						<td>Особенности</td>
-						<td>Универсальное (1к8)</td>
-					</tr>
-					<tr>
-						<td>.</td>
-						<td>.</td>
-					</tr>
-					<tr>
-						<td colspan="2">Оружие дальнего боя</td>
-					</tr>
-					<tr>
-						<td>Название</td>
-						<td>нет</td>
-					</tr>
-					<tr>
-						<td>Тип оружия</td>
-						<td>нет</td>
-					</tr>
-					<tr>
-						<td>Тип урона</td>
-						<td>нет</td>
-					</tr>
-					<tr>
-						<td>Урон</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Кол-во снарядов</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>.</td>
-						<td>.</td>
-					</tr>
-					<tr>
-						<td colspan="2">Доспех</td>
-					</tr>
-					<tr>
-						<td>Название</td>
-						<td>нет</td>
-					</tr>
-					<tr>
-						<td>Тип брони</td>
-						<td>нет</td>
-					</tr>
-					<tr>
-						<td>Клас доспеха</td>
-						<td>10</td>
-					</tr>
-					<tr>
-						<td>Щит</td>
-						<td>Нет</td>
-					</tr>
-					<tr>
-						<td>Штраф скрытности</td>
-						<td>нет</td>
-					</tr>
-					<tr>
-						<td>.</td>
-						<td>.</td>
-					</tr>
-					<tr>
-						<td colspan="2">Магическая фокусировка</td>
-					</tr>
-					<tr>
-						<td colspan="2">Волшебная палочка</td>
-					</tr>
-				</table>
-				<table border="1" width="50%">
-					<tr>
-						<td colspan="2">Монеты</td>
-					</tr>
-					<tr>
-						<td>Бронзовые</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Серебряные</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Золотые</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Платиновые</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Хранилище (зм)</td>
-						<td>174</td>
-					</tr>
-					<tr>
-						<td>.</td>
-						<td>.</td>
-					</tr>
-					<tr>
-						<td colspan="2">Расходники</td>
-					</tr>
-					<tr>
-						<td>Зелье леченья</td>
-						<td>0</td>
-					</tr>
-					<tr>
-						<td>Факелы</td>
-						<td>2</td>
-					</tr>
-					<tr>
-						<td>Рационы</td>
-						<td>15</td>
-					</tr>
-				</table>
-			</div>
-		</section>
-		<section></section>
-	</div>
-	<div class="page">
-		<section>
+		<section> <!-- Персонаж -->
 			<div class="title">Персонаж</div>
 			<div class="aboutCharacterContainer">
 				<div class="aboutCharacterImage">
@@ -258,9 +72,9 @@
 				<div class="aboutCharacterInfo">
 					<table>
 						<tr>
-							<td>Класс</td>
-							<td>Уровень</td>
-							<td>Хиты</td>
+							<td class="w70">Класс</td>
+							<td>Ур</td>
+							<td>ХП</td>
 						</tr>
 						<tr>
 							<td>Волшебник</td>
@@ -268,16 +82,16 @@
 							<td>к6(4)</td>
 						</tr>
 						<tr>
-							<td>.</td>
+							<td colspan="3">_</td>
 						</tr>
 						<tr>
-							<td>.</td>
+							<td colspan="3">_</td>
 						</tr>
 						<tr>
-							<td>.</td>
+							<td colspan="3">_</td>
 						</tr>
 						<tr>
-							<td>.</td>
+							<td colspan="3">_</td>
 						</tr>
 						<tr>
 							<td>Всего</td>
@@ -293,22 +107,22 @@
 							<td>Черты</td>
 						</tr>
 						<tr>
-							<td>.</td>
+							<td>_</td>
 						</tr>
 						<tr>
-							<td>.</td>
+							<td>_</td>
 						</tr>
 						<tr>
-							<td>.</td>
+							<td>_</td>
 						</tr>
 						<tr>
-							<td>.</td>
+							<td>_</td>
 						</tr>
 						<tr>
-							<td>.</td>
+							<td>_</td>
 						</tr>
 						<tr>
-							<td>.</td>
+							<td>_</td>
 						</tr>
 						
 					</table>
@@ -318,8 +132,8 @@
 			<div class="aboutCharacterContainer">
 				<table border="1" width="100%">
 					<tr>
-						<td>Опыт</td>
-						<td>-</td>
+						<td class="w50">Опыт</td>
+						<td>∞</td>
 					</tr>
 					<tr>
 						<td>Бонус мастерства</td>
@@ -327,107 +141,12 @@
 					</tr>
 					<tr>
 						<td>Вдохновение</td>
-						<td>.</td>
+						<td></td>
 					</tr>
 				</table>
 			</div>
 		</section>
-		<section>
-			<div class="title">Сражение</div>
-			<div class="col">
-				<div class="combatContainer col">
-					<div class="col">
-						<div class="row">
-							<img src="img/CharacterSheet/Combat/passivePerception.png" alt="">
-							<span class="title">Пасивная мудрость</span>
-							<span class="amount">11</span>
-						</div>
-						<div class="row">
-							<img src="img/CharacterSheet/Combat/armour.png" alt="">
-							<span class="title">Клас доспеха</span>
-							<span class="amount">10</span>
-						</div>
-						<div class="row">
-							<img src="img/CharacterSheet/Combat/initiative.jpg" alt="">
-							<span class="title">Бонус инициативы</span>
-							<span class="amount">+1</span>
-						</div>
-						<div class="row">
-							<img src="img/CharacterSheet/Combat/speed.png" alt="">
-							<span class="title">Скорость</span>
-							<span class="amount">25</span>
-						</div>
-						<div class="row">
-							<img src="img/CharacterSheet/Combat/size.png" alt="">
-							<span class="title">Размер</span>
-							<span class="amount">Малый</span>
-						</div>
-						<div class="row">
-							<img src="img/CharacterSheet/Combat/darkVision.png" alt="">
-							<span class="title">Темное зрение</span>
-							<span class="amount">60</span>
-						</div>
-					</div>
-				</div>
-				<div class="hitPointsContainer col">
-					<div class="hitPointsInfo col">
-						<div class="row">
-							<span class="title">Хитпоинты</span>
-						</div>
-						<div class="row">
-							<span class="title">Максимум</span>
-							<span class="title">Временные</span>
-							<span class="title">Текущие</span>
-						</div>
-						<div class="row">
-							<span class="amount">14</span>
-							<span class="amount"></span>
-							<span class="amount"></span>
-						</div>
-					</div>
-					<div class="liveSafeThrow col">
-						<div class="row">
-							<span class="title">Спасброски от смерти</span>
-						</div>
-						<div class="row">
-							<span>Успех</span>
-							<span>○</span>
-							<span>○</span>
-							<span>○</span>
-						</div>
-						<div class="row">
-							<span>Провал</span>
-							<span>○</span>
-							<span>○</span>
-							<span>○</span>
-						</div>
-					</div>
-					<div class="allSaveThrow">
-						<table border="1" width="100%">
-							<tr>
-								<td>Спасброски</td>
-								<td>Сопротивление</td>
-								<td>Имунитеты</td>
-							</tr>
-							<tr>
-								<td>Интеллект</td>
-								<td>нет</td>
-								<td>нет</td>
-							</tr>
-							<tr>
-								<td>Мудрость</td>
-								<td></td>
-								<td></td>
-							</tr>
-							
-						</table>
-					</div>
-				</div>
-			</div>	
-		</section>
-	</div>
-	<div class="page">
-		<section class="attributes">
+		<section class="attributes"> <!-- Характеристики -->
 			<div class="title">Характеристики</div>
 			<div class="attributeContainer">
 				<img src="img/CharacterSheet/Attributes/strength.jpg" alt="">
@@ -508,8 +227,10 @@
 					<li id="persuasion">Убеждение</li>
 				</ul>
 			</div>
-		</section>
-		<section>
+		</section>	
+	</div>
+	<div class="page"> 
+		<section> <!-- Владение -->
 			<div class="title">Владение</div>
 			<div class="skillsContainer">
 				<div class="skillsInfo">
@@ -541,6 +262,1364 @@
 					<span class="title">Доспехи</span>
 					<span>Нет</span>
 				</div>	
+			</div>
+		</section>
+		<section> <!-- Сражение -->
+			<div class="title">Сражение</div>
+			<div class="col">
+				<div class="combatContainer col">
+					<div class="col">
+						<div class="row">
+							<img src="img/CharacterSheet/Combat/passivePerception.png" alt="">
+							<span class="title">Пасивная мудрость</span>
+							<span class="amount">11</span>
+						</div>
+						<div class="row">
+							<img src="img/CharacterSheet/Combat/armour.png" alt="">
+							<span class="title">Клас доспеха</span>
+							<span class="amount">10</span>
+						</div>
+						<div class="row">
+							<img src="img/CharacterSheet/Combat/initiative.jpg" alt="">
+							<span class="title">Бонус инициативы</span>
+							<span class="amount">+1</span>
+						</div>
+						<div class="row">
+							<img src="img/CharacterSheet/Combat/speed.png" alt="">
+							<span class="title">Скорость</span>
+							<span class="amount">25</span>
+						</div>
+						<div class="row">
+							<img src="img/CharacterSheet/Combat/size.png" alt="">
+							<span class="title">Размер</span>
+							<span class="amount">Малый</span>
+						</div>
+						<div class="row">
+							<img src="img/CharacterSheet/Combat/darkVision.png" alt="">
+							<span class="title">Темное зрение</span>
+							<span class="amount">60</span>
+						</div>
+					</div>
+				</div>
+				<div class="hitPointsContainer col">
+					<table>
+						<tr>
+							<td colspan="3"><b>Хитпоинты</b></td>
+						</tr>
+						<tr>
+							<td>Максимум</td>
+							<td>Временные</td>
+							<td>Текущие</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<div class="liveSafeThrow col">
+						<table>
+							<tr>
+								<td colspan="4"><b>Спасброски от смерти</b></td>
+							</tr>
+							<tr>
+								<td class="w70">Успех</td>
+								<td>○</td>
+								<td>○</td>
+								<td>○</td>
+							</tr>
+							<tr>
+								<td class="w70">Провал</td>
+								<td>○</td>
+								<td>○</td>
+								<td>○</td>
+							</tr>
+						</table>
+					</div>
+					<div class="allSaveThrow">
+						<table border="1" width="100%">
+							<tr>
+								<td>Спасброски</td>
+								<td>Сопротивление</td>
+								<td>Имунитеты</td>
+							</tr>
+							<tr>
+								<td>Интеллект</td>
+								<td>нет</td>
+								<td>нет</td>
+							</tr>
+							<tr>
+								<td>Мудрость</td>
+								<td></td>
+								<td></td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+			</div>	
+		</section>
+	</div>
+	<div class="page">
+		<section> <!-- Экипировка -->
+			<div class="title">Экипировка</div>
+			<div class="equipmentContainer">
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/meleeWeapon.jpg" alt="">
+					<span class="title">Оружие ближнего боя</span>
+					<table>
+						<tr>
+							<td>Название</td>
+							<td>Боевой посох</td>
+						</tr>
+						<tr>
+							<td>Тип оружия</td>
+							<td>Простое, рукопашное</td>
+						</tr>
+						<tr>
+							<td>Тип урона</td>
+							<td>Дробящий</td>
+						</tr>
+						<tr>
+							<td>Урон</td>
+							<td>1к6</td>
+						</tr>
+						<tr>
+							<td>Особенности</td>
+							<td>Универсальное (1к8)</td>
+						</tr>
+					</table>	
+				</div>
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/rangeWeapon.png" alt="">
+					<span class="title">Оружие дальнего боя</span>
+					<table>
+						<tr>
+							<td>Название</td>
+							<td>нет</td>
+						</tr>
+						<tr>
+							<td>Тип оружия</td>
+							<td>нет</td>
+						</tr>
+						<tr>
+							<td>Тип урона</td>
+							<td>нет</td>
+						</tr>
+						<tr>
+							<td>Урон</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>Кол-во снарядов</td>
+							<td>0</td>
+						</tr>
+					</table>	
+				</div>
+			</div>
+			<div class="equipmentContainer">
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/armour.png" alt="">
+					<span class="title">Доспех</span>
+					<table>
+						<tr>
+							<td>Название</td>
+							<td>нет</td>
+						</tr>
+						<tr>
+							<td>Тип брони</td>
+							<td>нет</td>
+						</tr>
+						<tr>
+							<td>Клас доспеха</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>Щит</td>
+							<td>нет</td>
+						</tr>
+						<tr>
+							<td>Штраф скрытности</td>
+							<td>нет</td>
+						</tr>
+					</table>	
+				</div>
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/magic.png" alt="">
+					<span class="title">Магическая фокусировка</span>
+					<table>
+						<tr>
+							<td colspan="2">Волшебная палочка</td>
+						</tr>
+					</table>	
+				</div>
+			</div>
+			<div class="equipmentContainer">
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/coins.png" alt="">
+					<span class="title">Монеты</span>
+					<table>
+						<tr>
+							<td>Бронзовые</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>Серебряные</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>Золотые</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>Платиновые</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>Хранилище (зм)</td>
+							<td>174</td>
+						</tr>
+					</table>	
+				</div>
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/other.png" alt="">
+					<span class="title">Расходники</span>
+					<table>
+						<tr>
+							<td>Зелье леченья</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>Факелы</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>Рационы</td>
+							<td>15</td>
+						</tr>
+					</table>	
+				</div>
+			</div>
+		</section>
+		<section> <!-- Инвентарь -->
+			<div class="title">
+				<img src="img/CharacterSheet/Equipment/treasures.png" alt="" width="36px" height="36px">
+				Сокровища
+			</div>	
+			<div class="equipmentContainer">
+				<div class="equipmentInfo">
+					<table class="treasures">
+						<tr>
+							<td>Название</td>
+							<td>Кол-во</td>
+							<td>Цена</td>
+							<td>Вес</td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						
+					</table>	
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="page">
+		<section class="skillDescription template">
+			<table>
+				<tr>
+					<th colspan="2">Название</th>
+				</tr>
+				<tr>
+					<td colspan="2"><i>МиниОписание</i></td> <!-- 1й уровень скального гнома (умение) -->
+				</tr>
+				<tr>
+					<td><b>Кол-во использований:</b></td>
+					<td>Неограниченно</td>
+				</tr>
+				<tr>
+					<td><b>Время накладывания:</b></td>
+					<td>Неограниченно</td>
+				</tr>
+				<tr>
+					<td><b>Дистанция:</b></td>
+					<td>Касание</td>
+				</tr>
+				<tr>
+					<td><b>Компонненты:</b></td>
+					<td>В, С, М (на 100 зм)</td>
+				</tr>
+				<tr>
+					<td><b>Длительность:</b></td>
+					<td>Неограниченно</td>
+				</tr>
+				<tr>
+					<td class="f12" colspan="2">
+						Вы создаете Крошечное механическое устройство(КД 5, ХП 1)
+						<br>
+						<br>Вы можете потратить 1 час на перезарядку устройства (Длительность работы обновится)
+						<br>Вы можете действием разобрать его и получить обратно использованные материалы
+						<br>Одновременно вы можете иметь не более трёх таких устройств.
+						<br>При создании устройства выберите один из следующих вариантов:
+						<ul>
+							<li><b>Заводная игрушка.</b>
+								<br>Эта заводная игрушка изображает животное, чудовище или существо (прим. лягушка, мышь, птица, дракон, солдатик) Поставленная на землю, она проходит 5 футов в случайном направлении за каждый ваш ход, издавая звуки, соответствующие изображаемому существу.
+							</li>
+							<li><b>Зажигалка</b>
+								<br>Это устройство производит миниатюрный огонёк, с помощью которого можно зажечь свечу, факел или костёр. Использование этого устройства требует действия.
+							</li>
+							<li><b>Музыкальная шкатулка</b>
+								<br>При открытии эта шкатулка проигрывает мелодию средней громкости. Шкатулка перестаёт играть если мелодия закончилась или если шкатулку закрыли.
+							</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section class="skillDescription">
+			<table>
+				<tr>
+					<th colspan="2">Исследователь</th>
+				</tr>
+				<tr>
+					<td colspan="2"><i>1й уровень мудреца (навык)</i></td>
+				</tr>
+				<tr>
+					<td class="f14" colspan="2">
+						Если вы пытаетесь изучить или вспомнить информацию, которой вы не обладаете, вы часто знаете, где и от кого её можно получить. Обычно это библиотека, скрипторий, университет, мудрец или другое образованное существо. Мастер может решить, что искомое знание является тайной и хранится в практически недоступном месте, или что оно вообще недоступно. Поиски глубочайших тайн вселенной могут потребовать отдельного приключения или даже целой кампании.
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th colspan="2">Гномья хитрость</th>
+				</tr>
+				<tr>
+					<td colspan="2"><i>1й уровень гнома (навык)</i></td>
+				</tr>
+				<tr>
+					<td class="f14" colspan="2">
+						Вы совершаете с преимуществом спасброски Интеллекта, Мудрости и Харизмы против магии. 
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th colspan="2">Ремесленные знания</th>
+				</tr>
+				<tr>
+					<td colspan="2"><i>1й уровень скального гнома (навык)</i></td>
+				</tr>
+				<tr>
+					<td class="f14" colspan="2">
+						При совершении проверки Интеллекта (История) вы можете добавить к проверке удвоенный бонус мастерства вместо обычного.
+
+						<br>Применительно к объектам:
+						<ul>
+							<li>магический</li>
+							<li>алхимический</li>
+							<li>технологический</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section class="skillDescription">
+			<table>
+				<tr>
+					<th colspan="2">Создать устройство</th>
+				</tr>
+				<tr>
+					<td colspan="2"><i>1й уровень скального гнома (умение)</i></td>
+				</tr>
+				<tr>
+					<td><b>Время накладывания:</b></td>
+					<td>1 час</td>
+				</tr>
+				<tr>
+					<td><b>Дистанция:</b></td>
+					<td>Касание</td>
+				</tr>
+				<tr>
+					<td><b>Компонненты:</b></td>
+					<td>С, М (железо на 10 зм)</td>
+				</tr>
+				<tr>
+					<td><b>Длительность:</b></td>
+					<td>24 часа</td>
+				</tr>
+				<tr>
+					<td class="f12" colspan="2">
+						Вы создаете Крошечное механическое устройство(КД 5, ХП 1)
+						<br>
+						<br>Вы можете потратить 1 час на перезарядку устройства (Длительность работы обновится)
+						<br>Вы можете действием разобрать его и получить обратно использованные материалы
+						<br>Одновременно вы можете иметь не более трёх таких устройств.
+						<br>При создании устройства выберите один из следующих вариантов:
+						<ul>
+							<li><b>Заводная игрушка.</b>
+								<br>Эта заводная игрушка изображает животное, чудовище или существо (прим. лягушка, мышь, птица, дракон, солдатик) Поставленная на землю, она проходит 5 футов в случайном направлении за каждый ваш ход, издавая звуки, соответствующие изображаемому существу.
+							</li>
+							<li><b>Зажигалка</b>
+								<br>Это устройство производит миниатюрный огонёк, с помощью которого можно зажечь свечу, факел или костёр. Использование этого устройства требует действия.
+							</li>
+							<li><b>Музыкальная шкатулка</b>
+								<br>При открытии эта шкатулка проигрывает мелодию средней громкости. Шкатулка перестаёт играть если мелодия закончилась или если шкатулку закрыли.
+							</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section class="skillDescription">
+			<table>
+				<tr>
+					<th colspan="2">Копирование нового заклинания в книгу</th>
+				</tr>
+				<tr>
+					<td colspan="2"><i>1й уровень волшебника (умение)</i></td> <!-- 1й уровень скального гнома (умение) -->
+				</tr>
+				<tr>
+					<td><b>Время накладывания:</b></td>
+					<td>Ур. заклинания * 2 часа</td>
+				</tr>
+				<tr>
+					<td><b>Дистанция:</b></td>
+					<td>Касание</td>
+				</tr>
+				<tr>
+					<td><b>Компонненты:</b></td>
+					<td>В, С, М (Бумага, перья, чернила на сумму: ур. заклинания * 50 золотых + Материалы самого заклинания)</td>
+				</tr>
+				<tr>
+					<td class="f16" colspan="2">
+						Если вы находите заклинание волшебника, вы можете добавить его в свою книгу заклинаний, если оно имеет такой уровень, заклинания которого вы можете подготавливать.
+					</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+	<div class="page">
+		<section class="skillDescription">
+			<table>
+				<tr>
+					<th colspan="2">Копирование известного или подготовленного заклинания в книгу</th>
+				</tr>
+				<tr>
+					<td colspan="2"><i>1й уровень волшебника (умение)</i></td> <!-- 1й уровень скального гнома (умение) -->
+				</tr>
+				<tr>
+					<td><b>Время накладывания:</b></td>
+					<td>Ур. заклинания * 1 час</td>
+				</tr>
+				<tr>
+					<td><b>Дистанция:</b></td>
+					<td>Касание</td>
+				</tr>
+				<tr>
+					<td><b>Компонненты:</b></td>
+					<td>В, С, М (Бумага, перья, чернила на сумму: ур. заклинания * 10 золотых)</td>
+				</tr>
+				<tr>
+					<td class="f16" colspan="2">
+						Вы можете копировать заклинание из своей книги заклинаний в другую, например, если хотите сделать запасную копию.
+						<br>
+						<br>Если вы потеряли свою книгу заклинаний, вы можете использовать ту же процедуру для записи заклинаний, которые у вас подготовлены, в новую книгу заклинаний. Для заполнения оставшейся части книги заклинаний потребует найти новые заклинания, чтобы вернуть всё как прежде.
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section class="skillDescription">
+			<table>
+				<tr>
+					<th colspan="2">Магическое восстановление</th>
+				</tr>
+				<tr>
+					<td colspan="2"><i>1й уровень волшебника (умение)</i></td> <!-- 1й уровень скального гнома (умение) -->
+				</tr>
+				<tr>
+					<td><b>Кол-во использований:</b></td>
+					<td>1 раз в день</td>
+				</tr>
+				<tr>
+					<td><b>Время накладывания:</b></td>
+					<td>Короткий отдых (1 час)</td>
+				</tr>
+				<tr>
+					<td><b>Дистанция:</b></td>
+					<td>На себя</td>
+				</tr>
+				<tr>
+					<td><b>Компонненты:</b></td>
+					<td>С</td>
+				</tr>
+				<tr>
+					<td class="f16" colspan="2">
+						Вы можете восстановить часть использованных ячеек заклинаний, изучая книгу заклинаний.
+						<br>
+						<br>Ячейки заклинаний могут иметь сум-марный уровень, который не превышает половинууровня вашего волшебника (округляя в большуюсторону), и ни одна из ячеек не может быть ше-стого уровня или выше.
+						<br>
+						<br>Например, если вы волшебник 4 уровня, выможете восстановить ячейки заклинаний с сум-мой уровней не больше двух. Вы можете восстано-вить одну ячейку заклинаний 2 уровня, или двеячейки заклинаний 1 уровня. 
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section class="skillDescription">
+			<table>
+				<tr>
+					<th colspan="2">Исследования магии</th>
+				</tr>
+				<tr>
+					<td colspan="2"><i>2й уровень волшебника (умение)</i></td> <!-- 1й уровень скального гнома (умение) -->
+				</tr>
+				<tr>
+					<td><b>Кол-во использований:</b></td>
+					<td>1 раз за уровень</td>
+				</tr>
+				<tr>
+					<td><b>Время накладывания:</b></td>
+					<td>Ур. заклинания * 2 часа</td>
+				</tr>
+				<tr>
+					<td><b>Дистанция:</b></td>
+					<td>Касание</td>
+				</tr>
+				<tr>
+					<td><b>Компонненты:</b></td>
+					<td>В, С, М (Ур. заклинания * 100 золотых)</td>
+				</tr>
+				<tr>
+					<td><b>Длительность:</b></td>
+					<td>Неограниченно</td>
+				</tr>
+				<tr>
+					<td class="f16" colspan="2">
+						Вы можете добавить два заклинания волшебника по вашему выбору в книгу заклинаний. Уровень этих заклинаний не должен превышать уровень самой высокой имеющейся у вас ячейки заклинаний.
+					</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+	<div class="page">
+		<section> <!-- Экипировка Скарлет -->
+			<div class="title">Экипировка</div>
+			<div class="equipmentContainer">
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/meleeWeapon.jpg" alt="">
+					<span class="title">Оружие ближнего боя</span>
+					<table>
+						<tr>
+							<td>Название</td>
+							<td>Кулаки</td>
+						</tr>
+						<tr>
+							<td>Тип оружия</td>
+							<td>нет</td>
+						</tr>
+						<tr>
+							<td>Тип урона</td>
+							<td>Дробящий</td>
+						</tr>
+						<tr>
+							<td>Урон</td>
+							<td>1к4</td>
+						</tr>
+						<tr>
+							<td>Особенности</td>
+							<td>нет</td>
+						</tr>
+					</table>	
+				</div>
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/rangeWeapon.png" alt="">
+					<span class="title">Оружие дальнего боя</span>
+					<table>
+						<tr>
+							<td>Название</td>
+							<td>Длинный лук</td>
+						</tr>
+						<tr>
+							<td>Тип оружия</td>
+							<td>Воинское, дальнобойное</td>
+						</tr>
+						<tr>
+							<td>Тип урона</td>
+							<td>Колющий</td>
+						</tr>
+						<tr>
+							<td>Урон</td>
+							<td>1к8</td>
+						</tr>
+						<tr>
+							<td>Кол-во снарядов</td>
+							<td></td>
+						</tr>
+					</table>	
+				</div>
+			</div>
+			<div class="equipmentContainer">
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/armour.png" alt="">
+					<span class="title">Доспех</span>
+					<table>
+						<tr>
+							<td>Название</td>
+							<td>Кожаный доспех</td>
+						</tr>
+						<tr>
+							<td>Тип брони</td>
+							<td>Легкая</td>
+						</tr>
+						<tr>
+							<td>Клас доспеха</td>
+							<td>11 + мод ловкости</td>
+						</tr>
+						<tr>
+							<td>Щит</td>
+							<td>нет</td>
+						</tr>
+						<tr>
+							<td>Штраф скрытности</td>
+							<td>нет</td>
+						</tr>
+					</table>	
+				</div>
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/magic.png" alt="">
+					<span class="title">Магическая фокусировка</span>
+					<table>
+						<tr>
+							<td colspan="2">нет</td>
+						</tr>
+					</table>	
+				</div>
+			</div>
+			<div class="equipmentContainer">
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/coins.png" alt="">
+					<span class="title">Монеты</span>
+					<table>
+						<tr>
+							<td class="w70">Бронзовые</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Серебряные</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Золотые</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Платиновые</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Хранилище (зм)</td>
+							<td></td>
+						</tr>
+					</table>	
+				</div>
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/other.png" alt="">
+					<span class="title">Расходники</span>
+					<table>
+						<tr>
+							<td class="w70">Зелье леченья</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Факелы</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Рационы</td>
+							<td></td>
+						</tr>
+					</table>	
+				</div>
+			</div>
+		</section>
+		<section> <!-- Инвентарь -->
+			<div class="title">
+				<img src="img/CharacterSheet/Equipment/treasures.png" alt="" width="36px" height="36px">
+				Сокровища
+			</div>	
+			<div class="equipmentContainer">
+				<div class="equipmentInfo">
+					<table class="treasures">
+						<tr>
+							<td>Название</td>
+							<td>Кол-во</td>
+							<td>Цена</td>
+							<td>Вес</td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						
+					</table>	
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="page">
+		<section> <!-- Экипировка Клинфорт -->
+			<div class="title">Экипировка</div>
+			<div class="equipmentContainer">
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/meleeWeapon.jpg" alt="">
+					<span class="title">Оружие ближнего боя</span>
+					<table>
+						<tr>
+							<td>Название</td>
+							<td>Молот</td>
+						</tr>
+						<tr>
+							<td>Тип оружия</td>
+							<td>Воинское, рукопашное</td>
+						</tr>
+						<tr>
+							<td>Тип урона</td>
+							<td>Дробящий</td>
+						</tr>
+						<tr>
+							<td>Урон</td>
+							<td>2к6</td>
+						</tr>
+						<tr>
+							<td>Особенности</td>
+							<td>тяжелое, двуручное</td>
+						</tr>
+					</table>	
+				</div>
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/rangeWeapon.png" alt="">
+					<span class="title">Оружие дальнего боя</span>
+					<table>
+						<tr>
+							<td>Название</td>
+							<td>Легкий арбалет</td>
+						</tr>
+						<tr>
+							<td>Особенности</td>
+							<td>Простое, дальнобойное (80/320), перезарядка, двуручное</td>
+						</tr>
+						<tr>
+							<td>Тип урона</td>
+							<td>Колющий</td>
+						</tr>
+						<tr>
+							<td>Урон</td>
+							<td>1к8</td>
+						</tr>
+						<tr>
+							<td>Кол-во снарядов</td>
+							<td></td>
+						</tr>
+					</table>	
+				</div>
+			</div>
+			<div class="equipmentContainer">
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/armour.png" alt="">
+					<span class="title">Доспех</span>
+					<table>
+						<tr>
+							<td>Название</td>
+							<td>Кольчуга</td>
+						</tr>
+						<tr>
+							<td>Тип брони</td>
+							<td>Тяжелая (сил 13)</td>
+						</tr>
+						<tr>
+							<td>Клас доспеха</td>
+							<td>16</td>
+						</tr>
+						<tr>
+							<td>Щит</td>
+							<td>нет</td>
+						</tr>
+						<tr>
+							<td>Штраф скрытности</td>
+							<td>да</td>
+						</tr>
+					</table>	
+				</div>
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/magic.png" alt="">
+					<span class="title">Магическая фокусировка</span>
+					<table>
+						<tr>
+							<td colspan="2">Священный символ (Реликварий наставника - перстень с хрестом)</td>
+						</tr>
+					</table>	
+				</div>
+			</div>
+			<div class="equipmentContainer">
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/coins.png" alt="">
+					<span class="title">Монеты</span>
+					<table>
+						<tr>
+							<td class="w70">Бронзовые</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Серебряные</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Золотые</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Платиновые</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Хранилище (зм)</td>
+							<td></td>
+						</tr>
+					</table>	
+				</div>
+				<div class="equipmentInfo">
+					<img src="img/CharacterSheet/Equipment/other.png" alt="">
+					<span class="title">Расходники</span>
+					<table>
+						<tr>
+							<td class="w70">Зелье леченья</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Факелы</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Рационы</td>
+							<td></td>
+						</tr>
+					</table>	
+				</div>
+			</div>
+		</section>
+		<section> <!-- Инвентарь -->
+			<div class="title">
+				<img src="img/CharacterSheet/Equipment/treasures.png" alt="" width="36px" height="36px">
+				Сокровища
+			</div>	
+			<div class="equipmentContainer">
+				<div class="equipmentInfo">
+					<table class="treasures">
+						<tr>
+							<td>Название</td>
+							<td>Кол-во</td>
+							<td>Цена</td>
+							<td>Вес</td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>_</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						
+					</table>	
+				</div>
 			</div>
 		</section>
 	</div>
